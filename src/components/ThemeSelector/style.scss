@@ -12,14 +12,14 @@
     background: hsl(6, 63%, 50%);
     border-radius: 100%;
     position: absolute;
-    transition: transform .3s;
-    &.theme-one{
+    transition: transform .3s ;
+    &.themeOne{
         transform: translateX(0);
     }
-    &.theme-two{
+    &.themeTwo{
         transform: translateX(100%);
     }
-    &.theme-three{
+    &.themeThree{
         transform: translateX(200%);
     }
 }

@@ -4,20 +4,29 @@ import ButtonBoard from '../ButtonBoard'
 import Display from '../Display'
 import Header from '../Header'
 
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import styled from 'styled-components'
+import { ThemeContext } from '../../contexts/ThemeProvider'
+import themes from '../../utils/themes'
+
+
+const Div = styled.div`
+background-color: ${props => themes[props.theme].backgroundColor};
+`
 
 const Calculator = () => {
+    const { theme } = useContext(ThemeContext)
     const [displayContent, setDisplayContent] = useState(``)
 
     const clickHandle = (val) => {
         setDisplayContent(displayContent + val)
     }
     return (
-        <div className={`calculator`}>
-            <Header algo='red' />
+        <Div className={`calculator`} theme={theme}>
+            <Header />
             <Display displayContent={displayContent}/>
             <ButtonBoard clickHandle={clickHandle}/>
-        </div>
+        </Div>
     )
 }
 

@@ -1,18 +1,12 @@
-import styled from "styled-components";
 import ThemeSelector from "../ThemeSelector";
 
-const Encabezado = styled.h1`
-    color: ${props => props.xd};
-    background-color: ${props => props.theme.backgroundColor}
-`
 
-const Header = ({ algo }) => {
+const Header = () => {
     return (
         <header>
+            <h1>calc</h1>
+            <span>THEME</span>
             <ThemeSelector />
-            <Encabezado xd={algo}>
-                xddd
-            </Encabezado>
         </header>
     )
 }
