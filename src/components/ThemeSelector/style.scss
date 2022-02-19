@@ -1,0 +1,31 @@
+.selector{
+    display: flex;
+    position: relative;
+    background-color: hsl(223, 31%, 20%);
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.switch{
+    width: 20px;
+    height: 20px;
+    background: hsl(6, 63%, 50%);
+    border-radius: 100%;
+    position: absolute;
+    transition: transform .3s;
+}
+
+.opt{
+    width: 20px;
+    height: 20px;
+}
+
+.theme-one{
+    transform: translateX(0);
+}
+.theme-two{
+    transform: translateX(100%);
+}
+.theme-three{
+    transform: translateX(200%);
+}

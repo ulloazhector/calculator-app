@@ -1,8 +1,12 @@
+import { ThemeProvider } from "./contexts/ThemeContext"
+import Calculator from "./components/Calculator"
+
 const App = () => {
+    
     return (
-        <div>
-            app
-        </div>
+        <ThemeProvider>
+            <Calculator />
+        </ThemeProvider>
     )
 }
 

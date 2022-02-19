@@ -1,0 +1,36 @@
+.board{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 8px;
+    width: 100%;
+    grid-template-areas:    
+    'btn-7      btn-8       btn-9       btn-del'
+    'btn-4      btn-5       btn-6       btn-add'
+    'btn-1      btn-2       btn-3       btn-sub'
+    'btn-dot    btn-0       btn-div     btn-mul'
+    'btn-reset  btn-reset   btn-equ     btn-equ'
+    ;
+}
+
+.btn{
+    height: 32px;
+}
+
+.btn-0{ grid-area: btn-0; }
+.btn-1{ grid-area: btn-1; }
+.btn-2{ grid-area: btn-2; }
+.btn-3{ grid-area: btn-3; }
+.btn-4{ grid-area: btn-4; }
+.btn-5{ grid-area: btn-5; }
+.btn-6{ grid-area: btn-6; }
+.btn-7{ grid-area: btn-7; }
+.btn-8{ grid-area: btn-8; }
+.btn-9{ grid-area: btn-9; }
+.btn-dot{ grid-area: btn-dot; }
+.btn-del{ grid-area: btn-del; }
+.btn-add{ grid-area: btn-add; }
+.btn-sub{ grid-area: btn-sub; }
+.btn-mul{ grid-area: btn-mul; }
+.btn-div{ grid-area: btn-div; }
+.btn-reset{ grid-area: btn-reset; }
+.btn-equ{ grid-area: btn-equ; }
