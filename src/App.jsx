@@ -1,13 +1,23 @@
-import { ThemeProvider } from "./contexts/ThemeContext"
+import { ThemeProvider } from "styled-components"
 import Calculator from "./components/Calculator"
 
+const themes = {
+    themeOne: {
+        backgroundColor: `lightgreen`
+    },
+    themeTwo: {
+        backgroundColor: `lightblue`
+    }
+}
+
 const App = () => {
-    
+
     return (
-        <ThemeProvider>
+        <ThemeProvider theme={themes.themeTwo}>
             <Calculator />
         </ThemeProvider>
     )
 }
+
 
 export default App

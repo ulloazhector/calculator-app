@@ -13,6 +13,15 @@
     border-radius: 100%;
     position: absolute;
     transition: transform .3s;
+    &.theme-one{
+        transform: translateX(0);
+    }
+    &.theme-two{
+        transform: translateX(100%);
+    }
+    &.theme-three{
+        transform: translateX(200%);
+    }
 }
 
 .opt{
@@ -20,12 +29,3 @@
     height: 20px;
 }
 
-.theme-one{
-    transform: translateX(0);
-}
-.theme-two{
-    transform: translateX(100%);
-}
-.theme-three{
-    transform: translateX(200%);
-}

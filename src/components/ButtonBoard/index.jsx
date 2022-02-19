@@ -27,9 +27,9 @@ const ButtonBoard = ({ clickHandle }) => {
             {
                 buttons.map(({ id, name, content }) =>
                     <button 
-                        key={id} 
-                        className={`btn btn-${name}`}
-                        onClick={() => clickHandle(name)}
+                        key={ id } 
+                        className={`btn btn-${ name }`}
+                        onClick={() => clickHandle( name )}
                     >
                         {content}
                     </button>

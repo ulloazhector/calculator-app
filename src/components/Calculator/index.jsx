@@ -3,6 +3,7 @@ import './style.scss'
 import ButtonBoard from '../ButtonBoard'
 import Display from '../Display'
 import Header from '../Header'
+
 import { useState } from 'react'
 
 const Calculator = () => {
@@ -12,8 +13,8 @@ const Calculator = () => {
         setDisplayContent(displayContent + val)
     }
     return (
-        <div className='calculator'>
-            <Header />
+        <div className={`calculator`}>
+            <Header algo='red' />
             <Display displayContent={displayContent}/>
             <ButtonBoard clickHandle={clickHandle}/>
         </div>
